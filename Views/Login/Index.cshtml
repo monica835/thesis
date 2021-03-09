@@ -4,10 +4,12 @@
             <img class="mb-3" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/user-male-circle-blue-512.png" width="20%" heigth="20%" />
         </div>
         <div class="formInput">
-            <form class="align-items-center justify-content-center" style="margin-left:5%;">
-                <input type="text" class="mb-3 username" placeholder="Username" />
-                <input type="password" class="password mb-5" placeholder="Password" />
-                <button type="submit" class="btn btn-primary mb-5" style="width:300px">Login</button>
+            <form>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <input type="text" class="mb-3 username" placeholder="Username" />
+                    <input type="password" class="password mb-5" placeholder="Password" />
+                    <button type="submit" class="btn btn-primary mb-5 button" style="width:300px">Login</button>
+                </div>
             </form>
         </div>
     </div>
@@ -15,6 +17,22 @@
 
 
 <style>
+    @@media only screen and (max-width: 1125px) {
+        input[type=text], input[type=text]:focus {
+            width: 250px !important;
+            height: 30px !important;
+        }
+
+        input[type=password], input[type=password]:focus {
+            width: 250px !important;
+            height: 30px !important;
+        }
+
+        .button {
+            width: 250px !important;
+        }
+    }
+
     body {
         background-color: #444D8E;
     }
